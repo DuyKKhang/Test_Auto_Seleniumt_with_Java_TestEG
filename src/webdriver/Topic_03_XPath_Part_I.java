@@ -171,8 +171,9 @@ public class Topic_03_XPath_Part_I {
 		
 		// Action 2
 		driver.findElement(By.xpath("//form[@id='frmLogin']//input[@id='txtPhone']")).clear();
-		driver.findElement(By.xpath("//form[@id='frmLogin']//input[@id='txtPhone']")).sendKeys("1231");
-		
+		//driver.findElement(By.xpath("//form[@id='frmLogin']//input[@id='txtPhone']")).sendKeys("1231");
+		driver.findElement(By.cssSelector("form[id='frmLogin'] input[id='txtPhone']")).sendKeys("852154654");
+		// Verify
 		Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(),"Số điện thoại bắt đầu bằng: 09 - 03 - 012 - 016 - 018 - 019 - 088 - 03 - 05 - 07 - 08");
 		
 	}
