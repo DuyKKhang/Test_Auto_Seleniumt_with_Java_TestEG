@@ -1,5 +1,6 @@
 package javaTester;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,7 +58,9 @@ public class Topic_02_Data_Stype {
 		
 		// Collection: List/ Set/ Quecue
 		List<WebElement> checkBoxes = driver.findElements(By.cssSelector(""));
-				
+		List<Integer> str = new ArrayList<>();
+		
+		
 		// Map
 		Map<String,Integer> students = new HashMap<String, Integer>();
 	}
