@@ -23,18 +23,28 @@ public class Topic_00_Template {
 
 	@Test
 	public void TC_01_() {
-		}
+		sleep (3);
+	}
 
 	@Test
 	public void TC_02_() {
-		}
+	}
 
 	@Test
 	public void TC_03_() {
-		}
+	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
+	}
+	
+	// Sleep  (Static wait)
+	public void sleep (long time) {
+		try {
+			Thread.sleep(time * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }
